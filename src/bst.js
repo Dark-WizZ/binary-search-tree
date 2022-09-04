@@ -1,5 +1,3 @@
-export default Tree;
-
 class Node {
   constructor(data) {
     this.data = data;
@@ -106,8 +104,8 @@ class Tree {
     let res = [];
     function recurse(root) {
       if (!root) return;
-      fn(root);
       if (fn) fn(root);
+      res.push(root.data)
       recurse(root.left);
       recurse(root.right);
     }
@@ -169,7 +167,7 @@ class Tree {
     return [...new Set(arr)];
   };
 
-  prettyPrint(node, prefix = "", isLeft = true) {
+  prettyPrint(node=this.root, prefix = "", isLeft = true) {
     if (node.right !== null) {
       this.prettyPrint(
         node.right,
@@ -183,3 +181,6 @@ class Tree {
     }
   }
 }
+
+
+export default Tree; 
