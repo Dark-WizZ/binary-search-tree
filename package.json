@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Dark-WizZ/binary-search-tree/issues"
   },
-  "homepage": "https://github.com/Dark-WizZ/binary-search-tree#readme"
+  "homepage": "https://github.com/Dark-WizZ/binary-search-tree#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
